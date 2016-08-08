@@ -1,0 +1,79 @@
+<html>
+<header>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+
+function checkform()
+{
+var pay_type='2';
+if(pay_type=='2'){
+var OrderID='16071410314231CKU87446';
+var total_fee='0.01';
+var subject="业务订单支付（支付宝）";
+var body1="zhifu";
+
+getOrderInfo();
+}
+return true;
+}
+
+
+</script>
+</header>
+
+<body>
+<br/>
+<br/>
+<h2> 这里是一个HTML页面 </h2>
+<br/>
+
+<form method="post" name="myform" action="orderPay.asp" onsubmit="return checkform()">
+
+<div class="odertitcon">
+<h4>业务订单支付</h4>
+</div>
+<ul class="contl_ul bortop">
+
+<li>
+<span class="block">
+<span class="inblock">会员姓名：黄峰</span>
+</li>
+<li>
+<span class="inblock">会员编号：87446</span>
+</li>
+<li>
+<span class="inblock">账户余额：<span class="txtred">96,360.00元</span>
+</li>
+<li>
+<span class="inblock">订单编号：<span class="txtred">16071410314231@87446</span>
+</li>
+</span>
+<li>
+<span class="block">业务总计：<span class="txtred">￥360.00</span>
+</li>
+<span class="block hasinlabel">
+<br/>
+<label><input type="radio" name="pay_type" value="1"  checked >账户余额支付</label>
+
+
+
+<label><input name="pay_type" type="radio" value="2"  />
+支付宝支付</label>
+
+</span>
+
+
+<br/>
+<br/>
+<input type="submit"  value="订单支付">
+
+
+</p>
+</li>
+</ul>
+
+</form>
+
+
+</body>
+</html>
